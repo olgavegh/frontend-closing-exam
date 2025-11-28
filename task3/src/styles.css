@@ -1,0 +1,53 @@
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #f9f5f0;
+  color: #45171d;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+article:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+article {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p.author {
+    font-style: italic;
+  }
+  p.plot {
+    margin: 1rem 0;
+    line-height: 1.25rem;
+  }
+
+  & > * {
+    margin-bottom: 0.5rem;
+  }
+}
+
+footer {
+  border-top: 1px solid black;
+  text-align: right;
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+@media (max-width: 400px) {
+  p.plot {
+    display: none;
+  }
+}
