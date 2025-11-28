@@ -26,11 +26,10 @@ export default function App() {
 
   return (
     <Container maxWidth="sm">
-      <Typography variant="h1" align="center" gutterBottom>
+      <Typography variant="h1" align="left" gutterBottom>
         Books
       </Typography>
       <FormControl component="fieldset" sx={{ marginBottom: 2 }}>
-        <FormLabel component="legend">Filter by Era</FormLabel>
         <RadioGroup
           row
           name="era"
